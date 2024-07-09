@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+<body>
+    <div class="structure">
+        <header>
+            <nav>
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="logo">
+                    <h1>Loja</h1> 
+                </a>
+                <div>
+                    <input type="text" id="search" placeholder="Pesquisar">
+                    <a href="./carrinho.html"><img src="./img/carrinho.png" id="carrinho" alt="carrinho"></a>
+                    <button id="perfil"><img src="./img/perfil-de-usuario.png" alt="perfil"></button>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                    <div class="produto">
+                        <img src="./img/placadevideo.webp" alt="produto">
+                        <div class="mainInfProduct">
+                            <div class="textCard">
+                                <p class="vendas">+ de 1000 vendidos</p>
+                                <h2>Placa de video 1</h2> 
+                                <p class="precoOld">R$1400,00</p>
+                                <p class="preco">R$1200,00</p>
+                            </div>
+                            <div class="addProduto">
+                                <form action="#">
+                                    <fieldset>
+                                        <h3>Frete grátis</h3>
+                                        <a href="#" id="calcEntr"><p>Calcular o prazo de entrega</p></a>
+                                        <h3>Estoque disponivel</h3>
+        
+                                        <div>
+                                            <label for="quant">Quantidade:</label>
+                                            <input type="number" value="1" name="quant" id="quant">
+                                        </div>
+                                        <input type="submit" id="sub" value="Adicionar ao carrinho">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="caracDiv">
+                            <h2>Caracteristicas do produto</h2>
+                            <ul class="caracUl">
+                                <li class="caracItem"><img src="./img/check.png" alt="check">Tamanho da memória: <b>8 GB</b></li>
+                                <li class="caracItem"><img src="./img/check.png" alt="check">Conectividade: <b>HDMI, DisplayPort</b></li>
+                                <li class="caracItem"><img src="./img/check.png" alt="check">Tipo de memória gráfica: <b>GDDR6</b></li>
+                                <li class="caracItem"><img src="./img/check.png" alt="check">Interface com a placa-mãe: <b>PCI-Express 4.0</b></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <h2>Descrição</h2>
+                                <h3>PLACA DE VIDEO MANCER RX 5500 XT STREAKY, 8GB, GDDR6, 128-BIT, MCR-RX5500XT-STK</h3> <br>
+
+                                <h3>MANCER RADEON RX 5500 XT STREAKY</h3> <br>
+
+                                <p>Desenvolvida para ter um ótimo desempenho em diversos jogos, esta placa é ideal para suas gameplays. Com a Mancer RX 5500 XT Streaky no seu setup, você terá uma performance incrível.</p> <br>
+
+                                <h3>DESIGN</h3> <br>
+                                <p>Seu design diferenciado une beleza e praticidade, garantindo um visual moderno para o seu setup. Compatível com gabinetes de diversos tamanhos e com instalação prática e simples.</p> <br>
+
+                                <h3>TECNOLOGIA</h3> <br>
+                                <p>Com interface de memória de 128 bit e memória de 8GB, é a potência ideal para os jogos mais populares e oferece velocidade para os títulos modernos.</p> <br>
+
+                                <h3>REFRIGERAÇÃO</h3> <br>
+                                <p>Equipada com duas ventoinhas super eficientes de 12 pás, a Mancer RX 5500 XT Streaky mantém a temperatura de funcionamento ideal e garante a dissipação do calor, trazendo assim um melhor desempenho nos jogos.</p> <br>
+
+                                <h3>Especificações:</h3> <br>
+
+                                <ul class="caracList" >
+                                    
+                                    <li class="caracListItem">Marca: Mancer</li>
+                                    <li class="caracListItem">Modelo: MCR-RX5500XT-STK</li>
+                                    <li class="caracListItem">GPU: AMD RADEON RX 5500 XT</li>
+                                    <li class="caracListItem">Barramento: PCI express 4.0</li>
+                                    <li class="caracListItem">Frequência: 1717 MHz</li>
+                                    <li class="caracListItem">Núcleos: 1408</li>
+                                    <li class="caracListItem">Tamanho de memória: 8GB</li>
+                                    <li class="caracListItem">Tipo de memória: GDDR6</li>
+                                    <li class="caracListItem">Frequência da memória: 1750 MHz</li>
+                                    <li class="caracListItem">Interface da memória: 128-bit</li>
+                                    <li class="caracListItem">Entradas: 3 x DisplayPort, 1 x HDMI</li>
+                                    <li class="caracListItem">Conector: 8Pin</li>
+                                </ul>
+                            
+                                <br>
+                                <p>Dimensões: 219 x 114 x 49 mm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li>Endereço: Rua A 123</li>
+                    <li>Contato: (xx) xxxx-xxxx</li>
+                </ul>
+            </div>
+            <p>&COPY; Loja</p>
+            <div>
+                <ul>
+                    <li>
+                        <div id="socialMidia">
+                            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                            <a href="#"><img src="img/x.png" alt="x"></a>
+                            <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

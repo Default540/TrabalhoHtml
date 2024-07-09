@@ -1,0 +1,195 @@
+h2{
+    font-size: 2em;
+    color: var(--main-text-color);
+    text-align: center;
+    margin: 50px;
+}
+.container{
+    width: auto;
+}
+.card{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.card img{
+    border-radius: 10px;
+}
+
+.mainInfProduct{
+    display: flex;
+}
+
+.produto{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    
+}
+.produto h2{
+    margin-left: 0;
+}
+.vendas{
+    font-size: .8em;
+    color: gray;
+}
+
+.precoOld{
+    color: gray;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    text-align: start;
+    margin-bottom: 0;
+    height: 16px;
+}
+.preco{
+    color: green;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+#calcEntr{
+    color: rgb(43, 43, 255);
+}
+form{
+    height: 100%;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+}
+fieldset>*{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+#quant{
+    margin-left: 5px;
+    width: 50%;
+}
+#sub{
+    margin: auto;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    border: solid 2px var(--main-color);
+    border-radius: 10px;
+    height: 15%;
+}
+#sub:active{
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+
+.textDestaque{
+    font-weight: bold;
+}
+
+#caracDiv{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+.caracUl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+}
+
+.caracItem{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.caracItem>img{
+    height: 30px;
+    width: 30px;
+}
+
+.caracList{
+    list-style-type: disc;
+}
+
+.caracListItem{
+    margin: 5px;
+}
+
+
+@media (max-width: 1230px) {
+    
+    .card{
+        width: 90%;
+    }
+    .textCard{
+        border: 0;
+        border-right: 1px solid gray;
+    }
+    fieldset{
+        border: 0;
+    }   
+    .mainInfProduct{
+        border-top: 1px solid gray;
+    } 
+    .mainInfProduct>*{
+        width: 100%;
+    }
+
+    .produto{
+        flex-direction: column;
+    }
+    
+    .produto h2{
+        margin-left: 40px;
+    }
+    .preco , .precoOld{
+        text-align: center;
+    }
+
+
+    #sub{
+        margin: 30px;
+        height: 40px;
+    }
+    
+}
+
+@media (max-width: 848px) {
+    .caracUl{
+        grid-template-columns: 1fr;
+    }
+    .mainInfProduct{
+        flex-direction: column;
+    }
+    .mainInfProduct>*{
+        width: auto;
+    }
+
+    .textCard{
+        border: 0;
+    }
+    .produto img{
+        width: 100%;
+    }
+    .caracItem{
+        padding: 5px;
+        margin: 0;
+    }
+}

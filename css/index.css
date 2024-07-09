@@ -1,0 +1,129 @@
+@import url('./geral.css');
+
+h2{
+    margin: 40px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+#maisVendidos{
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll hidden;
+    gap: 30px;
+    justify-content: start;
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+.avaliacaoStar{
+    width: 10px;
+}
+#maisVendidos img{
+    max-width: 300px;
+}
+
+.avaliacao{
+    text-align: center;
+}
+.precoOld{
+    color: gray;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    text-align: start;
+    margin-bottom: 0;
+    height: 16px;
+}
+.preco{
+    color: green;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#marcas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+
+#marcas div.card{
+    display: flex;
+    padding: 15px;
+}
+#marcas img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.propaganda{
+    display: flex;
+    align-items: center;
+}
+.propaganda img{
+    width: 100%;
+    position: relative;
+    
+}
+
+.propagandaTxt{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 40px;
+    align-items: center;
+}
+.propagandaTxt>*{
+    color: white;
+    white-space: normal;
+  
+}
+.propagandaTxt button{
+    border-style: none;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border: solid 1px white;
+    width: max-content;
+}
+
+.propagandaTxt button:active{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+@media (max-width: 1000px) {
+    .propagandaTxt h2{
+        margin: 20px;
+    }
+    .propagandaTxt p{
+        font-size: .8em;
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .propaganda{
+        align-items: end;
+        flex-flow: row;
+    }
+    .propagandaTxt{
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+    .propagandaTxt>*{
+        padding: 30px;
+    }
+    .propagandaTxt p{
+        font-size: 1em;
+    }
+}
