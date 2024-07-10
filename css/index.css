@@ -21,8 +21,8 @@ h2{
 .avaliacaoStar{
     width: 10px;
 }
-#maisVendidos img{
-    max-width: 300px;
+#maisVendidos .card>img{
+    width: 300px;
 }
 
 .avaliacao{
@@ -126,4 +126,8 @@ h2{
     .propagandaTxt p{
         font-size: 1em;
     }
+    #maisVendidos .card>img{
+        width: 250px;
+    }
+    
 }
