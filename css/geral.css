@@ -133,7 +133,7 @@ ul{
 }
 #socialMidia img{
     width: 25px;
-    margin: 10px 20px 0 0;
+    margin: 10px 10px 0 0;
 }
 
 /*tela mediana*/
@@ -144,6 +144,9 @@ ul{
     }
     #search{
         display: inline-block;
+    }
+    #socialMidia img{
+        margin: 10px 20px 0 0;
     }
     footer{
         font-size: 16px;
