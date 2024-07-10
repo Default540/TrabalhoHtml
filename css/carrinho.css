@@ -11,6 +11,9 @@ h2{
 .container{
     width: auto;
 }
+fieldset{
+    border: none;
+}
 .card{
     margin: auto;
     margin-bottom: 20px;
