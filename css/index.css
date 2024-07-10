@@ -42,6 +42,10 @@ h2{
     margin-top: 20px;
 }
 
+figure{
+    margin: 0;
+}
+
 #marcas{
     display: flex;
     flex-flow: row wrap;
