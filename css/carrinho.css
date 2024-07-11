@@ -187,7 +187,7 @@ fieldset{
     
 }
 
-@media (max-width: 848px) {
+@media (max-width: 980px) {
 
     .mainInfProduct{
         flex-direction: column;
