@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/criarconta.css">
+</head>
+<body>
+    <div class="structure">
+        <header>
+            <nav>
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="logo">
+                    <h1>Loja</h1> 
+                </a>
+                <div>
+                    <input type="search" id="search" placeholder="Pesquisar">
+                    <a href="./carrinho.html"><img src="./img/carrinho.png" id="carrinho" alt="carrinho"></a>
+                    <a href="./criarconta.html" id="perfil"><img src="./img/perfil-de-usuario.png" alt="perfil"></a>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                    <form action="criarconta.php" method="post">
+                        <fieldset>
+                            <div class="formulario">
+                                <h2>Criar Conta</h2>
+                                <label for="nome">nome</label>
+                                <input type="text" name="nome" id="nome">
+                                <br>
+                                <label for="telefone">telefone</label>
+                                <input type="tel" id="telefone">
+                                <br>
+                                <label for="cpf">CPF</label>
+                                <input type="number" name="cpf" id="cpf">
+                                <br>
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="">
+                                <br>
+                                <label for="password">Senha</label>
+                                <input type="password" name="password" id="password">
+                                <input type="submit" value="Enviar" id="enviar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li>Endereço: Rua A 123</li>
+                    <li>Contato: (xx) xxxx-xxxx</li>
+                </ul>
+            </div>
+            <p>&COPY; Loja</p>
+            <div>
+                <ul>
+                    <li>
+                        <div id="socialMidia">
+                            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                            <a href="#"><img src="img/x.png" alt="x"></a>
+                            <a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
